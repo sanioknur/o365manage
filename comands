@@ -1,0 +1,2 @@
+ #get count of synced users
+ get-msoluser -all | where immutableid -ne $null | measure | fl count
